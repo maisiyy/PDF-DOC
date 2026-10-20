@@ -110,12 +110,3 @@ If nothing opens, temporarily change `pythonw.exe` to `python.exe` in the shortc
 2. If scanned, `run_ocr()` creates a searchable copy of the PDF in a temporary folder.
 3. `convert_pdf_to_docx()` passes the PDF (or the OCR'd copy) to `pdf2docx`, which rebuilds paragraphs, tables and images as a .docx file.
 4. `launch_gui()` wraps this in a CustomTkinter window and runs the conversion in a background thread.
-
-## Troubleshooting
-
-| Problem | Fix |
-| --- | --- |
-| `'python' is not recognized` | Reinstall Python and tick "Add python.exe to PATH" |
-| `ModuleNotFoundError` | The virtual environment is not active, or VS Code is using a different interpreter |
-| Error about OCR or Tesseract | Install Tesseract and Ghostscript and make sure they are on your PATH |
-| Shortcut does nothing | Use `python.exe` instead of `pythonw.exe` to see the error |
